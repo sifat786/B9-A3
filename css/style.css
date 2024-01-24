@@ -36,6 +36,10 @@ a{
     background: linear-gradient(45deg,rgba(19, 19, 24, 0.50),rgba(19, 19, 24, 0.10)),url(../images/banner4.png);
     background-repeat: no-repeat;
 }
-
+input::placeholder{
+    color: rgba(19, 19, 24, 0.30);
+    font-size: 16px;
+    font-weight: 400;
+}
 
 /*! common-style end */
