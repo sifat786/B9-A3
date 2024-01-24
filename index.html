@@ -3,50 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-
-    <!--! Font  -->
+    <title>Hockey’s</title>
     
-    <!--! Css Link -->
-    <link rel="shortcut icon" href="" type="image/x-icon">
+    <!--? Google Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!--? Css Link -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <!--? Daisy UI , Tailwind CSS & Font Awesome  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/96b7b3e22b.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-    
-    <header>
-        <h3></h3>
-        <nav>
-            <ul>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-            </ul>
+    <header class="max-w-[335px] lg:max-w-[1170px] mx-auto">
+        <!--! nav start  -->
+        <nav class="bg-white py-[20px] lg:py-[40px]">
+            <div class="navbar flex justify-between items-center">
+                <div class="">
+                  <div class="dropdown">
+                    <div tabindex="0" role="" class="lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-lg dropdown-content mt-6 z-[1] p-2 shadow bg-red-100 rounded-box w-[320px]">
+                        <li><a class="text-center text-red-500 text-base font-bold" href="">Home</a></li>
+                        <li><a class="text-center text-zinc-700 text-base font-normal transition-all ease-linear duration-200 hover:text-red-500" href="">About</a></li>
+                        <li><a class="text-center text-zinc-700 text-base font-normal transition-all ease-linear duration-200 hover:text-red-500" href="">Pages</a></li>
+                        <li><a class="text-center text-zinc-700 text-base font-normal transition-all ease-linear duration-200 hover:text-red-500" href="">Blog</a></li>
+                        <li><a class="text-center text-zinc-700 text-base font-normal transition-all ease-linear duration-200 hover:text-red-500" href="">Contact</a></li>
+                    </ul>
+                  </div>
+                  <a class="text-neutral-900 text-[24px] lg:text-4xl font-extrabold ml-4 lg:ml-0">Hockey<span class="text-red-500">’</span>s</a>
+                </div>
+                <div class="hidden lg:flex">
+                  <ul class="flex justify-center items-center gap-x-11">
+                    <li><a class="text-center text-red-500 text-base font-bold" href="">Home</a></li>
+                    <li><a class="text-center text-zinc-700 text-base font-normal transition-all ease-linear duration-200 hover:text-red-500" href="">About</a></li>
+                    <li><a class="text-center text-zinc-700 text-base font-normal transition-all ease-linear duration-200 hover:text-red-500" href="">Pages</a></li>
+                    <li><a class="text-center text-zinc-700 text-base font-normal transition-all ease-linear duration-200 hover:text-red-500" href="">Blog</a></li>
+                    <li><a class="text-center text-zinc-700 text-base font-normal transition-all ease-linear duration-200 hover:text-red-500" href="">Contact</a></li>
+                  </ul>
+                </div>
+                <div class="nav-end">
+                    <i class="fa-solid fa-magnifying-glass hidden lg:block mr-[24px] text-xl text-zinc-700 opacity-70 cursor-pointer"></i>
+                    <button class="bg-[#FF4240] px-[17px] lg:px-[24px] py-2 lg:py-[15px] text-center text-white text-lg lg:text-xl font-bold border-2 border-solid border-[#FF4240] duration-300 rounded-lg hover:text-black hover:bg-transparent cursor-pointer">Get Ticket</button>
+                </div>
+              </div>
         </nav>
-        <section class="banner">
-            <div class="banner-details">
-
+        <!--! nav end  -->
+        <!--! banner -->
+        <div class="carousel w-full rounded-2xl ">
+            <!--? Slide 1 -->
+            <div id="slide1" class="carousel-item relative w-full h-[200px] lg:h-[550px] rounded-2xl bg-[url('./images/banner.png')]
+            bg-no-repeat bg-center bg-cover">
+              <div class="absolute flex justify-center lg:justify-start gap-x-4 transform translate-y-[-30px] translate-x-[-5px] lg:translate-x-[0px] lg:-translate-y-1/2 left-10 right-5 top-[90%]">
+                <a href="#slide4" class="btn-sm lg:btn-md btn-circle bg-neutral-900 flex items-center justify-center"><i class="text-xl text-white fa-solid fa-chevron-left"></i></a> 
+                <a href="#slide2" class="btn-sm lg:btn-md btn-circle bg-neutral-900 flex items-center justify-center"><i class="text-base lg:text-xl text-white fa-solid fa-chevron-right"></i></a>
+              </div>
             </div>
-            <div class="banner-content">
-
+            <!--? Slide 2 -->
+            <div id="slide2" class="carousel-item relative w-full h-[200px] lg:h-[550px] rounded-2xl bg-[url('./images/banner2.png')]
+            bg-no-repeat bg-center bg-cover">
+              <div class="absolute flex justify-center lg:justify-start gap-x-4 transform translate-y-[-30px] translate-x-[-5px] lg:translate-x-[0px] lg:-translate-y-1/2 left-10 right-5 top-[90%]">
+                <a href="#slide1" class="btn-sm lg:btn-md btn-circle bg-neutral-900 flex items-center justify-center"><i class="text-xl text-white fa-solid fa-chevron-left"></i></a> 
+                <a href="#slide3" class="btn-sm lg:btn-md btn-circle bg-neutral-900 flex items-center justify-center"><i class="text-xl text-white fa-solid fa-chevron-right"></i></a>
+              </div>
             </div>
-        </section>
+            <!--? Slide 3 -->
+            <div id="slide3" class="carousel-item relative w-full h-[200px] lg:h-[550px] rounded-2xl bg-[url('./images/banner3.png')]
+            bg-no-repeat bg-center bg-cover">
+              <div class="absolute flex justify-center lg:justify-start gap-x-4 transform translate-y-[-30px] translate-x-[-5px] lg:translate-x-[0px] lg:-translate-y-1/2 left-10 right-5 top-[90%]">
+                <a href="#slide2" class="btn-sm lg:btn-md btn-circle bg-neutral-900 flex items-center justify-center"><i class="text-xl text-white fa-solid fa-chevron-left"></i></a> 
+                <a href="#slide4" class="btn-sm lg:btn-md btn-circle bg-neutral-900 flex items-center justify-center"><i class="text-xl text-white fa-solid fa-chevron-right"></i></a>
+              </div>
+            </div>
+            <!--? Slide 4 -->
+            <div id="slide4" class="carousel-item relative w-full h-[200px] lg:h-[550px] rounded-2xl bg-[url('./images/banner4.png')]
+            bg-no-repeat bg-center bg-cover">
+              <div class="absolute flex justify-center lg:justify-start gap-x-4 transform translate-y-[-30px] translate-x-[-5px] lg:translate-x-[0px] lg:-translate-y-1/2 left-10 right-5 top-[90%]">
+                <a href="#slide3" class="btn-sm lg:btn-md btn-circle bg-neutral-900 flex items-center justify-center"><i class="text-xl text-white fa-solid fa-chevron-left"></i></a> 
+                <a href="#slide1" class="btn-sm lg:btn-md btn-circle bg-neutral-900 flex items-center justify-center"><i class="text-xl text-white fa-solid fa-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <!--? banner content -->
+          <div class="w-full lg:w-[566px] py-4 lg:py-8 mt-3 bg-neutral-900 rounded-2xl flex justify-center items-center lg:translate-x-[100%] lg:translate-y-[-128%] z-10">
+            <div class="block items-center">
+                <h4 class="text-white text-left text-lg lg:text-2xl font-extrabold">Meet all the heroes from the field</h4>
+                <p class="pt-2 lg:pt-4 w-[303px] lg:w-[502px] text-justify lg:text-left text-sm text-white text-opacity-60 lg:text-base font-medium">Meet all the heroes at the grand event, where courage and strength unite for justice and triumph.</p>
+            </div>
+          </div>
+        <!--! banner -->
+        
     </header>
 
 
-    <main>
-        <section class="">
-
+    <main class="max-w-[335px] lg:max-w-[1170px] mx-auto">
+        <!--! club start  -->
+        <section class="common-section lg:pb-[20px] lg:mt-[-70px]">
+            <div class="first"></div>
+            <h1 class="text-center text-neutral-900 text-4xl font-extrabold">Professional Hockeys Club</h1>
+            <p class="w-[607px] m-auto pt-6 text-center text-neutral-900 text-opacity-60 text-base font-medium font-['Manrope'] leading-relaxed">Professional hockey club excels in skill, teamwork, and determination, dominating the ice with passion and precision.</p>
+            <div class="last"></div>
         </section>
+        <!--! club end  -->
+        <!--! progress  -->
+        <section class="lg:pt-[48px] lg:pb-[100px]">
+            <div class="grid grid-cols-1 lg:grid-cols-4 lg:gap-x-8">
+                <!--? progress 1 -->
+                <div class="text-center">
+                    <div class="radial-progress text-[#FF4240] text-center text-[20px] font-extrabold" style="--value:87;" role="progressbar"><span class="text-[#131318]">87%</span></div>
+                    <h5 class=" text-neutral-900 text-xl font-semibold pt-[24px] pb-4">Prayer Facility</h5>
+                    <p class="w-[250px] m-auto text-neutral-900 text-opacity-60 text-base font-normal leading-relaxed">Prayer facility available for spiritual serenity and reflection</p>
+                </div>
+                <!--? progress 2 -->
+                <div class="text-center">
+                    <div class="radial-progress text-[#49D293] text-center text-[20px] font-extrabold" style="--value:95;" role="progressbar"><span class="text-[#131318]">95%</span></div>
+                    <h5 class=" text-neutral-900 text-xl font-semibold pt-[24px] pb-4">Experienced Coach</h5>
+                    <p class="w-[250px] m-auto text-neutral-900 text-opacity-60 text-base font-normal leading-relaxed">Experienced coach leads with wisdom and expertise.</p>
+                </div>
+                <!--? progress 3 -->
+                <div class="text-center">
+                    <div class="radial-progress text-[#FFB546] text-center text-[20px] font-extrabold" style="--value:90;" role="progressbar"><span class="text-[#131318]">90%</span></div>
+                    <h5 class=" text-neutral-900 text-xl font-semibold pt-[24px] pb-4">Senior Player</h5>
+                    <p class="w-[250px] m-auto text-neutral-900 text-opacity-60 text-base font-normal leading-relaxed">Senior player showcases skill, leadership, and experience.</p>
+                </div>
+                <!--? progress 4 -->
+                <div class="text-center">
+                    <div class="radial-progress text-[#4C8DF1] text-center text-[20px] font-extrabold" style="--value:80;" role="progressbar"><span class="text-[#131318]">80%</span></div>
+                    <h5 class=" text-neutral-900 text-xl font-semibold pt-[24px] pb-4">Training Ground</h5>
+                    <p class="w-[250px] m-auto text-neutral-900 text-opacity-60 text-base font-normal leading-relaxed">Training ground fosters skills, teamwork, and excellence.</p>
+                </div>
+            </div>
+        </section>
+        <!--! progress  -->
+        <!--! program  -->
+        <section class="common-section lg:pb-[48px]">
+            <div class="first"></div>
+            <h1 class="text-center text-neutral-900 text-4xl font-extrabold">Program Sections</h1>
+            <p class="w-[607px] m-auto pt-6 text-center text-neutral-900 text-opacity-60 text-base font-medium font-['Manrope'] leading-relaxed">Program Sections include coding, debugging, testing, documentation, collaboration, innovation, learning, improvement, and teamwork for success.</p>
+            <div class="last"></div>
+        </section>
+        <!--! program  -->
+        <!--! hero  -->
+        <section class="">
+            <div class="">
+                <div class="bg-no-repeat bg-center bg-cover bg-opacity-50 w-1/2 h-[338px] rounded-2xl p-10 hero block justify-start items-end">
+                    <h3 class="text-white text-[28px] font-extrabold pt-[95px]">Professional Program</h3>
+                    <p class="w-[495px] text-white text-base font-medium font-['Manrope'] leading-relaxed">Professional Program offers advanced courses, expert instructors, and practical skills. Enhance your career with in-depth knowledge, hands-on experience, and networking opportunities. Elevate your professional journey today.</p>
+                </div>
+                <div class="bg-no-repeat bg-center bg-cover bg-opacity-50 w-1/2 h-[338px] rounded-2xl p-10 hero2 block justify-start items-end">
+                    <h3 class="text-white text-[28px] font-extrabold pt-[95px]">Professional Program</h3>
+                    <p class="w-[495px] text-white text-base font-medium font-['Manrope'] leading-relaxed">Professional Program offers advanced courses, expert instructors, and practical skills. Enhance your career with in-depth knowledge, hands-on experience, and networking opportunities. Elevate your professional journey today.</p>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="">
+            <div class="">
+                <div class="bg-no-repeat bg-center bg-cover bg-opacity-50 w-1/2 h-[338px] rounded-2xl p-10 hero block justify-start items-end">
+                    <h3 class="text-white text-[28px] font-extrabold pt-[95px]">Professional Program</h3>
+                    <p class="w-[495px] text-white text-base font-medium font-['Manrope'] leading-relaxed">Professional Program offers advanced courses, expert instructors, and practical skills. Enhance your career with in-depth knowledge, hands-on experience, and networking opportunities. Elevate your professional journey today.</p>
+                </div>
+            </div>
+        </section> -->
+        <!--! hero  -->
     </main>
 
 
-    <footer>
-        <div class="footer-details">
+    <footer class="">
+        <!--! footer start  -->
+        <!--! footer end  -->
+        <div class="">
 
         </div>
     </footer>
 
-    <script src="https://kit.fontawesome.com/96b7b3e22b.js" crossorigin="anonymous"></script>
 </body>
 </html>
