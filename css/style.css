@@ -11,7 +11,9 @@ a{
     display: inline-block;
     text-decoration: none;
 }
-
+body{
+    overflow-x: hidden;
+}
 
 /*! common-style start */
 .common-section .first{
@@ -27,13 +29,13 @@ a{
     margin-top: 32px;
 }
 .hero{
-    background: linear-gradient(45deg,rgba(19, 19, 24, 0.80),rgba(19, 19, 24, 0.10)),url(../images/banner2.png);
+    background: linear-gradient(45deg,rgba(19, 19, 24, 0.80),rgba(19, 19, 24, 0.15)),url(../images/banner2.png);
 }
 .hero2{
-    background: linear-gradient(45deg,rgba(19, 19, 24, 0.50),rgba(19, 19, 24, 0.10)),url(../images/banner3.png);
+    background: linear-gradient(45deg,rgba(19, 19, 24, 0.50),rgba(19, 19, 24, 0.15)),url(../images/banner3.png);
 }
 .hero3{
-    background: linear-gradient(45deg,rgba(19, 19, 24, 0.50),rgba(19, 19, 24, 0.10)),url(../images/banner4.png);
+    background: linear-gradient(45deg,rgba(19, 19, 24, 0.50),rgba(19, 19, 24, 0.15)),url(../images/banner4.png);
     background-repeat: no-repeat;
 }
 input::placeholder{
@@ -43,3 +45,14 @@ input::placeholder{
 }
 
 /*! common-style end */
+
+/*? Mobile */
+@media screen and (max-width: 640px) {
+    .common-section .first{
+        width: 335px;
+        margin-bottom: 24px;
+    }
+    .common-section .last{
+        margin-top: 24px;
+    }
+}
